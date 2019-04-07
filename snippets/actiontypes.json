@@ -1,3 +1,202 @@
 {
-  
+  "ActText": {
+    "prefix": "ktat",
+    "body":[
+      "act_${1:name}:",
+        "\ttype: \"text\"",
+        "\toptions:",
+          "\t\ttext:",
+          "\t\t\t- \"${2:response}\""
+    ],
+    "description": "Action Type: Text"
+  },
+  "ActTextData": {
+    "prefix": "ktatd",
+    "body":[
+      "act_${1:name}:",
+        "\ttype: \"text\"",
+        "\toptions:",
+          "\t\tdata: \"$(config.messages)\"",
+          "\t\tpath: \"$(data.lang)\"",
+          "\t\ttemplate: \"$[upgrade4G.confirmUpgrade]\""
+    ],
+    "description": "Action Type: Text Data"
+  },
+  "ActImage": {
+    "prefix": "ktai",
+    "body":[
+      "act_${1:name}:",
+        "\ttype: \"template\"",
+        "\toptions:",
+          "\t\ttype: \"image\"",
+          "\t\titems:",
+            "\t\t\toriginalContentUrl: \"${2:url_image}\"",
+            "\t\t\tpreviewImageUrl: \"${3:url_image}\""
+    
+    ],
+    "description": "Action Type: Image"
+  },
+  "ActButton": {
+    "prefix": "ktab",
+    "body":[
+      "act_${1:name}:",
+        "\ttype: \"template\"",
+        "\toptions:",
+          "\t\ttype: \"button\"",
+          "\t\titems:",
+            "\t\t\ttext: \"${2:text_desc}\"",
+            "\t\t\ttitle: \"${3:title}\"",
+            "\t\t\tactions:",
+              "\t\t\t\t- type: \"postback\"",
+                "\t\t\t\t\tlabel: \"${4:text_label}\"",
+                "\t\t\t\t\tpayload:",
+                  "\t\t\t\t\t\t${5:key}: \"${6:value}\"",
+              "\t\t\t\t- type: \"url\"",
+                "\t\t\t\t\turl: \"${8:url}\"",
+                "\t\t\t\t\tlabel: \"${9:label_text}\""
+    ],
+    "description": "Action Type: Button"
+  },
+  "ActCarousel": {
+    "prefix": "ktac",
+    "body":[
+      "act_${1:name}:",
+        "\ttype: \"template\"",
+        "\toptions:",
+          "\t\ttype: \"carousel\"",
+          "\t\titems:",
+            "\t\t\t- text: \"${2:text_desc}\"",
+              "\t\t\t\ttitle: \"${3:title}\"",
+              "\t\t\t\tactions:",
+                "\t\t\t\t\t- type: \"postback\"",
+                  "\t\t\t\t\t\tlabel: \"${4:label_text}\"",
+                  "\t\t\t\t\t\tpayload:", 
+                    "\t\t\t\t\t\t\t${5:key}: \"${6:value}\"",
+                "\t\t\t\t\t- type: \"url\"",
+                  "\t\t\t\t\t\turl: \"${7:url}\"",
+                  "\t\t\t\t\t\tlabel: \"${8:label_text}\"",
+            "\t\t\t- text: \"${9:text_desc}\"",
+              "\t\t\t\ttitle: \"${10:title}\"",
+              "\t\t\t\tactions:",
+                "\t\t\t\t\t- type: \"postback\"",
+                  "\t\t\t\t\t\tlabel: \"${11:label_text}\"",
+                  "\t\t\t\t\t\tpayload:",
+                    "\t\t\t\t\t\t\t${12:key}: \"${13:value}\"",
+                "\t\t\t\t\t- type: \"url\"",
+                  "\t\t\t\t\t\turl: \"${14:url}\"",
+                  "\t\t\t\t\t\tlabel: \"${15:label_text}\""
+    ],
+    "description": "Action Type: Carousel"
+  },
+  "ActImagemap": {
+    "prefix": "ktaim",
+    "body":[
+      "act_${1:name}:"
+    ],
+    "description": "Action Type: Imagemap Line"
+  },
+  "ActSticker": {
+    "prefix": "ktas",
+    "body":[
+      "act_${1:name}:",
+        "\ttype: \"template\"",
+        "\toptions:",
+          "\t\ttype: \"sticker\"",
+          "\t\titems:",
+            "\t\t\tstickerId: \"${2:id}\"",
+            "\t\t\tpackageId: \"${3:id}\""    
+    ],
+    "description": "Action Type: Sticker Line"
+  },
+  "ActVideo": {
+    "prefix": "ktav",
+    "body":[
+      "act_${1:name}:",
+        "\ttype: \"template\"",
+        "\toptions:",
+          "\t\ttype: \"video\"",
+          "\t\titems:",
+            "\t\t\toriginalContentUrl: \"${2:url}\"",
+            "\t\t\tpreviewImageUrl: \"${3:url}\""
+    ],
+    "description": "Action Type: Video"
+  },
+  "ActAudio": {
+    "prefix": "ktaa",
+    "body":[
+      "act_${1:name}:",
+        "\ttype: \"template\"",
+        "\toptions:",
+          "\t\ttype: \"audio\"",
+          "\t\titems:", 
+            "\t\t\toriginalContentUrl: \"${2:url}\"",
+            "\t\t\tduration: \"${3:url}\""
+    ],
+    "description": "Action Type: Audio"
+  },
+  "ActLocation": {
+    "prefix": "ktal",
+    "body":[
+      "act_${1:name}:",
+        "\ttype: \"template\"",
+        "\toptions:",
+          "\t\ttype: \"location\"",
+          "\t\titems:", 
+            "\t\t\ttitle: \"${2:title}\"",
+            "\t\t\taddress: \"${3:addres}\"",
+            "\t\t\tlatitude: \"${4:latitude}\"",
+            "\t\t\tlongitude: \"${5:longitude}\"",
+            "\t\t\tlocationImageUrl: \"${6:url_image}\""
+    ],
+    "description": "Action Type: Location"
+  },
+  "ActQuickReplay": {
+    "prefix": "ktaq",
+    "body":[
+      "act_${1:name}:",
+        "\ttype: \"template\"",
+        "\toptions:",
+          "\t\ttype: \"${2:button | text | carousel | image}\"",
+          "\t\titems:",
+            "\t\t\tquickreply:", 
+              "\t\t\t\t- type: \"location\"",
+              "\t\t\t\t- type: \"text\"",
+                "\t\t\t\t\tthumbnailImageUrl: \"${3:url_image}\"",
+                "\t\t\t\t\tlabel: \"${4:label}\"",
+                "\t\t\t\t\tpayload:",
+                "\t\t\t\t\t\t${5:key}: ${6:value}"
+    ],
+    "description": "Action Type: Quick Replay Messenger"
+  },
+  "ActSehedule": {
+    "prefix": "ktasc",
+    "body":[
+      "act_${1:name}:",
+        "\ttype: \"schedule\"",
+        "\toptions:",
+          "\t\tid: \"${2:id_string}\"",
+          "\t\tcommand: \"${3:add | remove}\"",
+          "\t\tmessage: \"${4:Message}\"",
+          "\t\tstart: \"${5:datetime}\"",
+          "\t\tend: \"${6:datetime}\"",
+          "\t\tfreqType: \"${7:string, // second, minute, hour, day, week, month, year}\"",
+          "\t\tfreqInterval: \"${8:number}\""
+    ],
+    "description": "Action Type: Schedule"
+  },
+  "ActAPI": {
+    "prefix": "ktaapi",
+    "body":[
+      "act_${1:name}:",
+        "\ttype: \"api\"",
+        "\toptions:",
+          "\t\turi: \"${2:url_api}\"",
+          "\t\tmethod: \"${3:GET | POST}\"",
+          "\t\tbody: \"${4:JsonObject}\"",
+          "\t\theaders: \"${5:JsonObject}\"",
+          "\t\tquery: \"${6:JsonObject}\"",
+          "\t\tresultPath: \"${7:string}\""
+    ],
+    "description": "Action Type: Schedule"
+  }
 }

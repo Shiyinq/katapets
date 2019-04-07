@@ -24,6 +24,22 @@
             {
                 "language": "yaml",
                 "path": "./snippets/basicflow.json"
+            },
+            {
+                "language": "yaml",
+                "path": "./snippets/openingflow.json"
+            },
+            {
+                "language": "yaml",
+                "path": "./snippets/smalltalkflow.json"
+            },
+            {
+                "language": "yaml",
+                "path": "./snippets/fallbackflow.json"
+            },
+            {
+                "language": "yaml",
+                "path": "./snippets/actiontypes.json"
             }
         ]
     }
