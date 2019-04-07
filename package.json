@@ -1,0 +1,30 @@
+{
+    "name": "katapets",
+    "displayName": "katapets",
+    "description": "Kata Ai Snippets",
+    "version": "0.0.1",
+    "publisher": "Shiyinq",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Shiyinq/katapets"
+    },
+    "icon": "favicon.ico",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "yaml",
+                "path": "./snippets/initial.json"
+            },
+            {
+                "language": "yaml",
+                "path": "./snippets/basicflow.json"
+            }
+        ]
+    }
+}

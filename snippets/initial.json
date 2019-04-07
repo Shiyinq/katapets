@@ -1,0 +1,17 @@
+{
+  "Initial":{
+    "prefix": "ktinit",
+    "body": [
+      "schema: kata.ai/schema/kata-ml/1.0",
+      "name: $1",
+      "desc: $2",
+      "flows:",
+      "\t${3:name flow} :$include(${4:path flow})",
+      "config:",
+      "nlus: $include(${5:path nlus})",
+      "\tmaxRecursion: 10",
+      "tag: null"
+    ],
+    "description": "Initial bot.yml"
+  }
+}
