@@ -11,7 +11,7 @@ Welcome to "katapets" its mean Kata.Ai Snippets 😆
     - Snippet Fallback flow
   - Intents (Coming soon)
   - States (Coming soon)
-  - Actions Types: All actions in [Kata.Ai](https://docs.kata.ai/kata-ml/action-type/)
+  - Actions: All Action Types in [Kata.Ai](https://docs.kata.ai/kata-ml/action-type/)
 
 ## Command
   - 

@@ -19,27 +19,27 @@
         "snippets": [
             {
                 "language": "yaml",
-                "path": "./snippets/initial.json"
+                "path": "./snippets/flows/initial.json"
             },
             {
                 "language": "yaml",
-                "path": "./snippets/basicflow.json"
+                "path": "./snippets/flows/basicflow.json"
             },
             {
                 "language": "yaml",
-                "path": "./snippets/openingflow.json"
+                "path": "./snippets/flows/openingflow.json"
             },
             {
                 "language": "yaml",
-                "path": "./snippets/smalltalkflow.json"
+                "path": "./snippets/flows/smalltalkflow.json"
             },
             {
                 "language": "yaml",
-                "path": "./snippets/fallbackflow.json"
+                "path": "./snippets/flows/fallbackflow.json"
             },
             {
                 "language": "yaml",
-                "path": "./snippets/actiontypes.json"
+                "path": "./snippets/action/actions.json"
             }
         ]
     }
