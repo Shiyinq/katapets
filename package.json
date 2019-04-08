@@ -39,6 +39,14 @@
             },
             {
                 "language": "yaml",
+                "path": "./snippets/intent/intents.json"
+            },
+            {
+                "language": "yaml",
+                "path": "./snippets/state/states.json"
+            },
+            {
+                "language": "yaml",
                 "path": "./snippets/action/actions.json"
             }
         ]
