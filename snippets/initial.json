@@ -6,9 +6,9 @@
       "name: $1",
       "desc: $2",
       "flows:",
-      "\t${3:name flow} :$include(${4:path flow})",
+      "\t${3:name_flow} :\\$include(${4:path_flow})",
       "config:",
-      "nlus: $include(${5:path nlus})",
+      "nlus: \\$include(${5:path_nlus})",
       "\tmaxRecursion: 10",
       "tag: null"
     ],
