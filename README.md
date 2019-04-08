@@ -1,6 +1,6 @@
 # katapets README
 
-Welcome to "katapets" its mean Kata.Ai Snippets 😆
+Welcome to ```katapets``` its mean Kata.Ai Snippets 😆
 
 ## Features
   - Flow
@@ -13,6 +13,7 @@ Welcome to "katapets" its mean Kata.Ai Snippets 😆
   - States
   - Actions: All Action Types in [Kata.Ai](https://docs.kata.ai/kata-ml/action-type/)
   - nlus
+  - variable
 
 ## Command
   - 
