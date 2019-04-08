@@ -48,6 +48,10 @@
             {
                 "language": "yaml",
                 "path": "./snippets/action/actions.json"
+            },
+            {
+                "language": "yaml",
+                "path": "./snippets/nlus/nlus.json"
             }
         ]
     }

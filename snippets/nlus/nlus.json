@@ -1,0 +1,37 @@
+{
+  "NlusNLUS": {
+    "prefix": "ktnn",
+    "body": [
+      "${1:name_nlus}:",
+        "\ttype: nl",
+        "\toptions:",
+          "\t\tnluId: '${2:nlu_id}'",
+          "\t\tthreshold: 0.5",
+          "\t\toutput: value",
+          "\t\tflatten: true"
+    ],
+    "description": "Nlus NLU"
+  },
+  "NlusKeyword": {
+    "prefix": "ktnk",
+    "body": [
+      "${1:name_nlus}:",
+        "\ttype: keyword",
+        "\toptions:",
+          "\t\tkeywords:",
+            "\t\t\t${2:name_keyword}:",
+              "\t\t\t\t- ${3:value_keyword}"
+    ],
+    "description": "Nlus Keyword"
+  },
+  "NlusRegex": {
+    "prefix": "ktnr",
+    "body": [
+      "${1:name_nlus}:",
+        "\ttype: regex",
+        "\toptions:",
+          "\t\tregex: \"${2:code_regex}\""
+    ],
+    "description": "Nlus Regex"
+  }
+}
