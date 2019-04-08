@@ -1,3 +1,54 @@
 {
-  
+  "StateInitial": {
+    "prefix": "ktsinit",
+    "body": [
+      "state_initial:",
+        "\tinitial: true",
+        "\ttransitions:",
+          "\t\tstate_$1:",
+            "\t\t\tcondition: \"intent == '$2'\"",
+          "\t\t$3"
+    ],
+    "description": "State Initial"
+  },
+  "StateDefault": {
+    "prefix": "ktsd",
+    "body": [
+      "state_$1:",
+        "\tend: true",
+        "\taction:",
+          "\t\t- name: $2",
+          "\t\t$3"
+    ],
+    "description": "State Default"
+  },
+  "StateWithTransitions": {
+    "prefix": "ktst",
+    "body": [
+      "state_$1:",
+        "\taction:",
+          "\t\t- name: ${2:action_name}",
+        "\ttransitions:",
+          "\t\t${3:state_name}:",
+            "\t\t\tcondition: ${4:condition}"
+    ],
+    "description": "State with transitions"
+  },
+  "StateHitAPI": {
+    "prefix": "ktsa",
+    "body": [
+      "state_hit_api_$1:",
+        "\taction:",
+          "\t\t- name: ${2:act_api}",
+          "\t\t- name: command",
+            "\t\t\toptions:",
+              "\t\t\t\tcommand: call_api",
+              "\t\t\t\tpayload:",
+                "\t\t\t\t\tres_data: \\$(result)",
+        "\ttransitions:",
+          "\t\tstate_fallback:",
+            "\t\t\tcondition:"
+    ],
+    "description": "State Hit API"
+  }
 }
