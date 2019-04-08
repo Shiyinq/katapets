@@ -1,0 +1,259 @@
+{
+  "intents": {
+    "prefix": "intents",
+    "body": [
+      "intents:",
+        "\t$1"
+    ],
+    "description": "intents"
+  },
+  "intent": {
+    "prefix": "intent",
+    "body": [
+      "intent: $1"
+    ],
+    "description": "intent"
+  },
+  "states": {
+    "prefix": "states",
+    "body": [
+      "states:",
+        "\t$1"
+    ],
+    "description": "states"
+  },
+  "actions": {
+    "prefix": "actions",
+    "body": [
+      "actions:",
+        "\t$1"
+    ],
+    "description": "actions"
+  },
+  "methods": {
+    "prefix": "methods",
+    "body": [
+      "methods:",
+        "\t$1"
+    ],
+    "description": "methods"
+  },
+  "method": {
+    "prefix": "method",
+    "body": [
+      "method: $1"
+    ],
+    "description": "method"
+  },
+  "action": {
+    "prefix": "action",
+    "body": [
+      "action: $1"
+    ],
+    "description": "action"
+  },
+  "initial": {
+    "prefix": "initial",
+    "body": [
+      "initial: $1"
+    ],
+    "description": "initial"
+  },
+  "type": {
+    "prefix": "type",
+    "body": [
+      "type: $1"
+    ],
+    "description": "type"
+  },
+  "condition": {
+    "prefix": "condition",
+    "body": [
+      "condition: $1"
+    ],
+    "description": "condition"
+  },
+  "classifier": {
+    "prefix": "classifier",
+    "body": [
+      "classifier: $1"
+    ],
+    "description": "classifier"
+  },
+  "nlu": {
+    "prefix": "nlu",
+    "body": [
+      "nlu: $1"
+    ],
+    "description": "nlu"
+  },
+  "match": {
+    "prefix": "match",
+    "body": [
+      "match: $1"
+    ],
+    "description": "match"
+  },
+  "expression": {
+    "prefix": "expression",
+    "body": [
+      "expression: $1"
+    ],
+    "description": "expression"
+  },
+  "tattributes": {
+    "prefix": "tattributes",
+    "body": [
+      "tattributes: $1"
+    ],
+    "description": "tattributes"
+  },
+  "end": {
+    "prefix": "end",
+    "body": [
+      "end: $1"
+    ],
+    "description": "end"
+  },
+  "transitions": {
+    "prefix": "transitions",
+    "body": [
+      "transitions: $1"
+    ],
+    "description": "transitions"
+  },
+  "context": {
+    "prefix": "context",
+    "body": [
+      "context.$1"
+    ],
+    "description": "context"
+  },
+  "mapping": {
+    "prefix": "mapping",
+    "body": [
+      "mapping: $1"
+    ],
+    "description": "mapping"
+  },
+  "name": {
+    "prefix": "name",
+    "body": [
+      "- name: $1"
+    ],
+    "description": "name"
+  },
+  "fallback": {
+    "prefix": "fallback",
+    "body": [
+      "fallback: $1"
+    ],
+    "description": "fallback"
+  },
+  "transit": {
+    "prefix": "transit",
+    "body": [
+      "transit: $1"
+    ],
+    "description": "transit"
+  },
+  "options": {
+    "prefix": "options",
+    "body": [
+      "options: $1"
+    ],
+    "description": "options"
+  },
+  "body": {
+    "prefix": "body",
+    "body": [
+      "body:",
+        "\t$1"
+    ],
+    "description": "body"
+  },
+  "uri": {
+    "prefix": "uri",
+    "body": [
+      "uri: $1"
+    ],
+    "description": "uri"
+  },
+  "text": {
+    "prefix": "text",
+    "body": [
+      "text: $1"
+    ],
+    "description": "text"
+  },
+  "template": {
+    "prefix": "template",
+    "body": [
+      "template: $1"
+    ],
+    "description": "template"
+  },
+  "data": {
+    "prefix": "data",
+    "body": [
+      "data: $1"
+    ],
+    "description": "data"
+  },
+  "payload": {
+    "prefix": "payload",
+    "body": [
+      "payload: $1"
+    ],
+    "description": "payload"
+  },
+  "command": {
+    "prefix": "command",
+    "body": [
+      "command: $1"
+    ],
+    "description": "command"
+  },
+  "items": {
+    "prefix": "items",
+    "body": [
+      "items: $1"
+    ],
+    "description": "items"
+  },
+  "title": {
+    "prefix": "title",
+    "body": [
+      "title: $1"
+    ],
+    "description": "title"
+  },
+  "thumbnailImageUrl": {
+    "prefix": "thumbnailImageUrl",
+    "body": [
+      "thumbnailImageUrl: $1"
+    ],
+    "description": "thumbnailImageUrl"
+  },
+  "label": {
+    "prefix": "label",
+    "body": [
+      "label: $1"
+    ],
+    "description": "label"
+  },
+  "originalContentUrl": {
+    "prefix": "originalContentUrl",
+    "body": [
+      "originalContentUrl: $1"
+    ],
+    "description": "originalContentUrl"
+  },
+  "previewImageUrl": {
+    "prefix": "previewImageUrl",
+    "body": [
+      "previewImageUrl: $1"
+    ],
+    "description": "previewImageUrl"
+  }
+}
