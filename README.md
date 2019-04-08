@@ -9,9 +9,10 @@ Welcome to "katapets" its mean Kata.Ai Snippets 😆
     - Snippet Opening flow
     - Snippet Smalltalk flow
     - Snippet Fallback flow
-  - Intents (Coming soon)
-  - States (Coming soon)
+  - Intents
+  - States
   - Actions: All Action Types in [Kata.Ai](https://docs.kata.ai/kata-ml/action-type/)
+  - nlus
 
 ## Command
   - 
