@@ -1,3 +1,95 @@
 {
-  
+  "IntentDefault": {
+    "prefix": "ktid",
+    "body": [
+      "intent_$1:",
+        "\tinitial: true",
+        "\ttype: text",
+        "\tcondition: content == \"$2\""
+    ],
+    "description": "Intent Default"
+  },
+  "IntentPayload": {
+    "prefix": "ktip",
+    "body": [
+      "intent_$1:",
+        "\tinitial: true",
+        "\ttype: data",
+        "\tcondition: \"payload.${2:payload_name} == '${3:payload_value}'\""
+    ],
+    "description": "Intent With Payload"
+  },
+  "IntentNlus": {
+    "prefix": "ktin",
+    "body": [
+      "intent_$1:",
+        "\tinitial: true",
+        "\ttype: text",
+        "\tclassifier:",
+          "\t\tnlu: ${2:name_nlus}",
+          "\t\tmatch: ${3:keywod_nlus}"
+    ],
+    "description": "Intent With nlus"
+  },
+  "IntentNLU": {
+    "prefix": "ktinl",
+    "body": [
+      "intent_$1:",
+        "\tinitial: true",
+        "\ttype: text",
+        "\tclassifier:",
+          "\t\tnlu: ${2:name_nlu}",
+          "\t\texpression: ${3:expression_nlu}"
+    ],
+    "description": "Intent With NLU"
+  },
+  "IntentNlusArtributes": {
+    "prefix": "ktina",
+    "body": [
+      "intent_$1:",
+        "\tinitial: true",
+        "\ttype: text",
+        "\tclassifier:",
+          "\t\tnlu: ${2:name_nlu}",
+        "\tattributes:",
+          "\t\t${3:name_attributes}:",
+            "\t\t\tnlu: ${4:name_nlu}"
+    ],
+    "description": "Intent With nlus + Attributes"
+  },
+  "IntentReenter": {
+    "prefix": "ktir",
+    "body": [
+      "reenter:",
+        "\ttype: command",
+        "\tcondition: content == \"reenter\""
+    ],
+    "description": "Intent Reenter"
+  },
+  "IntentSimple": {
+    "prefix": "ktis",
+    "body": [
+      "intent_$1:",
+        "\ttype: text"
+    ],
+    "description": "Intent Simple"
+  },
+  "IntentCommand": {
+    "prefix": "ktic",
+    "body": [
+      "intent_$1:",
+        "\ttype: command",
+        "\tcondition: \"content == '${2:name_content}'\""
+    ],
+    "description": "Intent Command"
+  },
+  "IntentCommandAPI": {
+    "prefix": "ktica",
+    "body": [
+      "intent_hit_api:",
+        "\ttype: command",
+        "\tcondition: \"content == 'call_api'\""
+    ],
+    "description": "Intent Command API"
+  }
 }
