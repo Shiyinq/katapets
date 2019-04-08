@@ -9,8 +9,8 @@ Welcome to "katapets" its mean Kata.Ai Snippets 😆
     - Snippet Opening flow
     - Snippet Smalltalk flow
     - Snippet Fallback flow
-  - State (Coming soon)
-  - Intent (Coming soon)
+  - Intents (Coming soon)
+  - States (Coming soon)
   - Actions Types: All actions in [Kata.Ai](https://docs.kata.ai/kata-ml/action-type/)
 
 ## Command
@@ -36,7 +36,7 @@ This extension Unreleased
 ### [Unreleased]
   - Unreleased Version
 
-## Smiliar Project by me
+## Similar Project by me
   - [shi-kata](https://github.com/Shiyinq/shi-kata)
 
 
