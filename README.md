@@ -15,28 +15,17 @@ Welcome to ```katapets``` its mean Kata.Ai Snippets 😆
   - nlus
   - variable
 
-## Command
-  - 
 ## Requirements
-
   - VsCode
   - yml file
-  - Develop Bot with [Kata-Cli](https://github.com/kata-ai/kata-cli), [Kata.Ai](https://kata.ai/).
-
-## Extension Settings
-
-For now to install it, please put the folder this project to path: ```C:\Users\{:user}\.vscode\extensions and then restart vscoden```
-
+  - Develop Bot with [Kata-Cli](https://github.com/kata-ai/kata-cli), [platform.Ai](https://platform.kata.ai/).
 
 ## Known Issues
   - Please create issues if you have a issues
 
 ## Release Notes
-
-This extension Unreleased
-
-### [Unreleased]
-  - Unreleased Version
+  - 1.0.0
+    - Publish Katapets
 
 ## Similar Project by me
   - [shi-kata](https://github.com/Shiyinq/shi-kata)
