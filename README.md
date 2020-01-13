@@ -23,10 +23,6 @@ Welcome to ```katapets``` its mean Kata.Ai Snippets 😆
 ## Known Issues
   - Please create issues if you have a issues
 
-## Release Notes
-  - 1.0.0
-    - Publish Katapets
-
 ## Similar Project by me
   - [shi-kata](https://github.com/Shiyinq/shi-kata)
 
