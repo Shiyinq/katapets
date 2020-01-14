@@ -67,24 +67,26 @@
           "\t\titems:",
             "\t\t\t- text: \"${2:text_desc}\"",
               "\t\t\t\ttitle: \"${3:title}\"",
+              "\t\t\t\tthumbnailImageUrl: \"${4:url_image}\"",
               "\t\t\t\tactions:",
                 "\t\t\t\t\t- type: \"postback\"",
-                  "\t\t\t\t\t\tlabel: \"${4:label_text}\"",
+                  "\t\t\t\t\t\tlabel: \"${5:label_text}\"",
                   "\t\t\t\t\t\tpayload:", 
-                    "\t\t\t\t\t\t\t${5:key}: \"${6:value}\"",
+                    "\t\t\t\t\t\t\t${6:key}: \"${7:value}\"",
                 "\t\t\t\t\t- type: \"url\"",
-                  "\t\t\t\t\t\turl: \"${7:url}\"",
-                  "\t\t\t\t\t\tlabel: \"${8:label_text}\"",
-            "\t\t\t- text: \"${9:text_desc}\"",
-              "\t\t\t\ttitle: \"${10:title}\"",
+                  "\t\t\t\t\t\turl: \"${8:url}\"",
+                  "\t\t\t\t\t\tlabel: \"${9:label_text}\"",
+            "\t\t\t- text: \"${10:text_desc}\"",
+              "\t\t\t\ttitle: \"${11:title}\"",
+              "\t\t\t\tthumbnailImageUrl: \"${12:url_image}\"",
               "\t\t\t\tactions:",
                 "\t\t\t\t\t- type: \"postback\"",
-                  "\t\t\t\t\t\tlabel: \"${11:label_text}\"",
+                  "\t\t\t\t\t\tlabel: \"${13:label_text}\"",
                   "\t\t\t\t\t\tpayload:",
-                    "\t\t\t\t\t\t\t${12:key}: \"${13:value}\"",
+                    "\t\t\t\t\t\t\t${14:key}: \"${15:value}\"",
                 "\t\t\t\t\t- type: \"url\"",
-                  "\t\t\t\t\t\turl: \"${14:url}\"",
-                  "\t\t\t\t\t\tlabel: \"${15:label_text}\""
+                  "\t\t\t\t\t\turl: \"${16:url}\"",
+                  "\t\t\t\t\t\tlabel: \"${17:label_text}\""
     ],
     "description": "Action Type: Carousel"
   },
@@ -236,5 +238,13 @@
           "\t\tresultPath: \"${7:string}\""
     ],
     "description": "Action Type: Schedule"
+  },
+  "ActMethod": {
+    "prefix": "ktame",
+    "body":[
+      "act_${1:name}:",
+      "\ttype: \"method\"",
+      "\tmethod: \"${2:method_name}\""
+    ]
   }
 }
