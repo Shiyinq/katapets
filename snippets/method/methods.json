@@ -1,0 +1,21 @@
+{
+  "MethodStructure": {
+    "prefix": "ktmm",
+    "body": [
+      "methods:",
+        "\t${1:name_function}(ctx): \"",
+        "\t\t${2:code_javascript_here}",
+        "\t\""
+    ],
+    "description": "Method Structure"
+  },
+  "MethodFunction": {
+    "prefix": "ktmf",
+    "body": [
+      "${1:name_function}(ctx): \"",
+      "\t${2:code_javascript_here}",
+      "\""
+    ],
+    "description": "Function"
+  }
+}
