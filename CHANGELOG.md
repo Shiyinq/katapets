@@ -4,6 +4,10 @@ All notable changes to the "katapets" extension will be documented in this file.
 
 Check [Keep a Changelog](https://github.com/Shiyinq/katapets) for recommendations on how to structure this file.
 
+## 1.0.4 (16/01/2020)
+
+- Add Example Login FLow ```ktfl```
+
 ## 1.0.3 (15/01/2020)
 
 - Add command ```ktmm``` for javascript code in section methods

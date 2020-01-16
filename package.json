@@ -2,7 +2,7 @@
     "name": "katapets",
     "displayName": "katapets",
     "description": "Kata Ai Snippets",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "Shiyinq",
     "repository": {
         "type": "git",
@@ -36,6 +36,10 @@
             {
                 "language": "yaml",
                 "path": "./snippets/flows/fallbackflow.json"
+            },
+            {
+                "language": "yaml",
+                "path": "./snippets/flows/loginFlow.json"
             },
             {
                 "language": "yaml",
