@@ -2,6 +2,9 @@
 
 Welcome to ```katapets``` its mean Kata.Ai Snippets 😆
 
+## Install
+To install katapets [Click Here](https://marketplace.visualstudio.com/items?itemName=Shiyinq.katapets).
+
 ## Features
   - Flow
     - Snippet Basic flow
